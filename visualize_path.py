@@ -17,7 +17,7 @@ def build_vertex_graph(mesh):
     return G
 
 def nearest_vertex(mesh, point):
-    return int(mesh.kdtree.query(point.reshape(1, 3))[1][0])
+    return int(mesh.kdtree.query(point.reshape(1, 3))[1][0]) #pick out the nearest point to calculate Euclidian distance
 
 if __name__ == "__main__":
    
