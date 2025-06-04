@@ -5,9 +5,9 @@ import trimesh
 import networkx as nx
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-
+# Build the graph
 def build_vertex_graph(mesh):
-    G = nx.Graph()
+    G = nx.Graph() #nx.Graph subject
     verts = mesh.vertices
     for tri in mesh.faces:
         for u, v in ((tri[0], tri[1]), (tri[1], tri[2]), (tri[2], tri[0])):
